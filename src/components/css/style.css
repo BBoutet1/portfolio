@@ -1,0 +1,222 @@
+/*Main background and font family defined*/
+
+body {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 50px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+
+/* h1 heading (my mame) attributes*/
+
+h1 {
+    background: rgb(33, 119, 99);
+    font-size: 24px;
+    color: white;
+    padding: 20px;
+    margin: 0px;
+}
+
+
+/* h2 heading "About Me" attributes*/
+
+h2 {
+    font-size: 24px;
+    color: rgb(33, 119, 99);
+    border-bottom: rgb(173, 171, 171);
+    border-bottom-style: solid;
+    padding: 20px 20px 20px 0;
+}
+
+
+/*h3 inndex content attributes */
+
+h3 {
+    font-size: 16px;
+}
+
+
+/* Paragraphs text attributes*/
+
+p {
+    font-size: 14px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+/*'main'tag box content attribute*/
+
+main {
+    overflow: auto;
+    padding: 15px;
+}
+
+
+/*section tag initial attributes*/
+
+section {
+    padding: 0 20px 10px 20px;
+}
+
+
+/*container initial attributes*/
+
+.container {
+    max-width: 720px;
+    margin-left: 50px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+
+/*Link selector attributes*/
+
+a:link {
+    color: grey;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:visited {
+    color: red;
+}
+
+
+/*index image attributes*/
+
+img {
+    width: 250px;
+    height: 160px;
+    margin: 15px;
+    margin-top: 0px;
+    margin-left: 0px;
+    float: left;
+}
+
+
+/*portfolio box attributes*/
+
+.box {
+    float: none;
+    width: 250px;
+    height: 150px;
+    margin: auto;
+    margin-bottom: 10px;
+    border: rgb(173, 171, 171);
+    border-style: solid;
+    border-width: 2px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+
+/*navigation list section tag special attributes */
+
+.center {
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+
+/*fit the portfolio main tag width*/
+
+.fitPortfolio {
+    max-width: 544px;
+    clear: both;
+}
+
+
+/*  porfolio text container*/
+
+.text-block {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 99px;
+    background-color: rgb(33, 119, 99);
+    color: white;
+    text-align: center;
+}
+
+
+/*contact page button*/
+
+.btn {
+    background-color: rgb(33, 119, 99);
+    color: white;
+}
+
+
+/*contact page form*/
+
+form {
+    color: rgb(71, 69, 69);
+}
+
+
+/************* Container attributes definition below 980px screen size*********/
+
+@media screen and (max-width: 980px) {
+    .container {
+        width: auto;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+
+/************* Container attributes definition below 640px screen size*********/
+
+@media screen and (max-width: 640px) {
+    body {
+        min-width: 320px;
+    }
+    .container {
+        width: auto;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    /*main tag new attributes*/
+    .sm-main {
+        margin-right: 15px;
+        margin-left: 15px;
+        overflow: auto;
+    }
+    /*h1 headings on full screen width*/
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+    /*justify the porfolio content*/
+    .box {
+        float: none;
+        margin: auto;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    /* Responsive image size and display*/
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+footer {
+    background-color: rgb(53, 51, 51);
+    text-align: center;
+    height: 40px;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    margin-top: 50px;
+    border-top: rgb(33, 119, 99);
+    border-top-style: solid;
+    border-width: 6px;
+}

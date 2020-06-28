@@ -2,32 +2,15 @@ import React from "react";
 
 function NavTabs(props) {
   return (
-    <ul className="nav nav-tabs">
+    <ul className="nav nav-tabs flex-row-reverse">
+   
       <li className="nav-item">
         <a
-          href="#home"
-          onClick={() => props.handlePageChange("Home")}
-          className={props.currentPage === "Home" ? "nav-link active" : "nav-link"}
+          href="#portfolio"
+          onClick={() => props.handlePageChange("Portfolio")}
+          className={props.currentPage === "Portfolio" ? "nav-link active" : "nav-link"}
         >
-          Home
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#about"
-          onClick={() => props.handlePageChange("About")}
-          className={props.currentPage === "About" ? "nav-link active" : "nav-link"}
-        >
-          About
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#blog"
-          onClick={() => props.handlePageChange("Blog")}
-          className={props.currentPage === "Blog" ? "nav-link active" : "nav-link"}
-        >
-          Blog
+          Portfolio
         </a>
       </li>
       <li className="nav-item">
@@ -39,6 +22,25 @@ function NavTabs(props) {
           Contact
         </a>
       </li>
+        <li className="nav-item">
+        <a
+          href="#about"
+          onClick={() => props.handlePageChange("About")}
+          className={props.currentPage === "About" ? "nav-link active" : "nav-link"}
+        >
+          About
+        </a>
+      </li>
+         <li className="nav-item">
+        <a
+          href="#home"
+          onClick={() => props.handlePageChange("Home")}
+          className={props.currentPage === "Home" ? "nav-link active" : "nav-link"}
+        >
+          Home
+        </a>
+      </li>
+    
     </ul>
   );
 }
