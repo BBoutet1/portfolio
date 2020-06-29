@@ -16,11 +16,15 @@ body,
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.1)
+    background-color: rgba(0, 0, 0, 0.5)
 }
 
-
-/* h1 heading (my mame) attributes*/
+a {
+    height: 60px;
+    width: 130px;
+    font-size: 25px;
+    text-align: center;
+}
 
 h1 {
     background: rgb(33, 119, 99);

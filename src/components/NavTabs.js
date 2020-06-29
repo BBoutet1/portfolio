@@ -2,7 +2,7 @@ import React from "react";
 
 function NavTabs(props) {
   return (
-    <ul className="nav nav-tabs flex-row-reverse">
+    <ul className="nav nav-tabs flex-row-reverse  bg-secondary">
    
       <li className="nav-item">
         <a
