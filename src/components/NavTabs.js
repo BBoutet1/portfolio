@@ -2,7 +2,7 @@ import React from "react";
 
 function NavTabs(props) {
   return (
-    <div className="bg-light w-100 d-flex flex-wrap justify-content-between">
+    <div className="header bg-light w-100 d-flex flex-wrap justify-content-between">
     <h2 className="my-name bg-secondary"> Brice Boutet</h2>
     <ul className="nav nav-tabs">
           <li className="nav-item">
