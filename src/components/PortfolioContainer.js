@@ -19,7 +19,7 @@ class PortfolioContainer extends Component {
 
   //Conditional backgound image (only the home page)
   setBakground = page => {
-    if (page != "Home") {
+    if (page !== "Home") {
       this.setState({
        backgroundClass: ""
       })
