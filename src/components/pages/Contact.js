@@ -5,7 +5,7 @@ const Contact = () => (
 
         <h2> <strong>Contact</strong></h2>
         <section className="aboutMe">
-            <form action="mailto:boutetlb@gmail.com" method="post" enctype="text/plain">
+            <form action="mailto:boutetlb@gmail.com" method="post">
                 <div className="form-group">
                     <label>Name:</label>
                     <input type="text" className="form-control" id="usr" name="name"/>

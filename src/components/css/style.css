@@ -1,10 +1,22 @@
 /*Main background and font family defined*/
 
-body {
+html,
+body,
+#root,
+.wrapper {
     padding: 0px;
     margin: 0px;
-    margin-bottom: 50px;
+    height: 100%;
+    width: 100%;
     font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.HomeBackground {
+    background-image: url("../images/codingdesk.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.1)
 }
 
 
