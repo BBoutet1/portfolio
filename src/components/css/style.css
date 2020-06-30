@@ -1,4 +1,8 @@
-/*Main background and font family defined*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
 html,
 body,
@@ -27,7 +31,6 @@ a {
 }
 
 h1 {
-    background: rgb(33, 119, 99);
     font-size: 24px;
     color: white;
     padding: 20px;
@@ -39,35 +42,48 @@ h1 {
 
 h2 {
     font-size: 24px;
-    color: rgb(33, 119, 99);
+    color: #6c757d;
     border-bottom: rgb(173, 171, 171);
     border-bottom-style: solid;
     padding: 20px 20px 20px 0;
 }
 
-.my-name {
+.my-name,
+.myName {
+    font-family: 'Courgette';
     font-size: 30px;
     padding: 11px;
     margin: 0px;
     border: 0px;
-    color: white;
-    height: 60px;
+    color: cyan;
     width: 200px;
     text-align: center;
+    overflow: auto;
+}
+
+.my-name {
+    background-color: darkgrey;
 }
 
 .myName {
-    font-family: 'Norican';
     font-size: 60px;
     padding: 15px;
     margin: auto;
     display: block;
-    color: white;
     padding-bottom: 5px;
-    margin-bottom: 200px;
 }
 
-ul {
+.welcome {
+    color: cyan;
+    font-family: 'Courgette';
+    font-size: 40px;
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 3%;
+}
+
+;
+a {
     width: 520px;
     height: 60px;
 }
@@ -78,11 +94,10 @@ ul {
     height: 100%;
     top: 0px;
     bottom: 0px;
-    background-color: #6c757d!important;
-    opacity: 0.9;
+    background: rgba(255, 0, 0, 0.5);
+    padding-top: 13%;
 }
 
-;
 
 /*h3 inndex content attributes */
 
@@ -94,16 +109,25 @@ h3 {
 /* Paragraphs text attributes*/
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     text-align: justify;
-    text-justify: inter-word;
+}
+
+.card p,
+.card a {
+    float: left;
+    margin: 0px;
+    line-height: 150%;
+    margin-left: 5px;
+    font-size: 16px;
+    height: 150%;
+    width: auto;
 }
 
 
 /*'main'tag box content attribute*/
 
 main {
-    overflow: auto;
     padding: 15px;
 }
 
@@ -112,16 +136,6 @@ main {
 
 section {
     padding: 0 20px 10px 20px;
-}
-
-
-/*container initial attributes*/
-
-.container {
-    max-width: 720px;
-    margin-left: 50px;
-    margin-bottom: 0px;
-    padding: 0px;
 }
 
 
@@ -136,19 +150,33 @@ a:hover {
 }
 
 a:visited {
-    color: red;
+    color: rgba(255, 0, 0);
+}
+
+picture {
+    width: 250px;
+    float: left;
+    margin: 0 15px 5px 0;
+    border: 1px solid rgb(173, 171, 171);
+    padding: 5px;
 }
 
 
-/*index image attributes*/
+/* Profil picture */
 
-img {
-    width: 250px;
-    height: 160px;
-    margin: 15px;
-    margin-top: 0px;
-    margin-left: 0px;
-    float: left;
+.profile_image {
+    display: block;
+    margin: 10px auto 10px auto;
+    width: 90%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.card {
+    padding: 8px;
+    margin-top: 10px;
+    background-color: rgb(223, 222, 222);
+    border-radius: 8px;
 }
 
 
@@ -168,24 +196,7 @@ img {
 }
 
 
-/*navigation list section tag special attributes */
-
-.center {
-    margin: auto;
-    padding-top: 10px;
-    padding-bottom: 0px;
-}
-
-
 /*fit the portfolio main tag width*/
-
-.fitPortfolio {
-    max-width: 544px;
-    clear: both;
-}
-
-
-/*  porfolio text container*/
 
 .text-block {
     width: 100%;
@@ -210,67 +221,4 @@ img {
 
 form {
     color: rgb(71, 69, 69);
-}
-
-
-/************* Container attributes definition below 980px screen size*********/
-
-@media screen and (max-width: 980px) {
-    .container {
-        width: auto;
-        margin-right: 20px;
-        margin-left: 20px;
-    }
-}
-
-
-/************* Container attributes definition below 640px screen size*********/
-
-@media screen and (max-width: 640px) {
-    body {
-        min-width: 320px;
-    }
-    .container {
-        width: auto;
-        margin-right: 0px;
-        margin-left: 0px;
-    }
-    /*main tag new attributes*/
-    .sm-main {
-        margin-right: 15px;
-        margin-left: 15px;
-        overflow: auto;
-    }
-    /*h1 headings on full screen width*/
-    h1 {
-        width: 100%;
-        text-align: center;
-    }
-    /*justify the porfolio content*/
-    .box {
-        float: none;
-        margin: auto;
-        margin-bottom: 10px;
-        display: flex;
-        justify-content: center;
-    }
-    /* Responsive image size and display*/
-    img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-footer {
-    background-color: rgb(53, 51, 51);
-    text-align: center;
-    height: 40px;
-    color: white;
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    margin-top: 50px;
-    border-top: rgb(33, 119, 99);
-    border-top-style: solid;
-    border-width: 6px;
 }

@@ -2,9 +2,10 @@ import React from "react";
 
 function NavTabs(props) {
   return (
-    <div className="header bg-light w-100 d-flex flex-wrap justify-content-between">
-    <h2 className="my-name bg-secondary"> Brice Boutet</h2>
-    <ul className="nav nav-tabs">
+   
+   
+      <ul className="nav nav-tabs  bg-secondary w-100">
+         <h2 className="my-name mr-auto"> Brice Boutet</h2>
           <li className="nav-item">
         <a
           href="#home"
@@ -44,7 +45,7 @@ function NavTabs(props) {
     
      
       </ul>
-      </div>
+
   );
 }
 

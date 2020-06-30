@@ -3,7 +3,7 @@ import "../css/style.css";
 const Contact = () => (
   <main className="container bg-white">
 
-        <h2> <strong>Contact</strong></h2>
+        <h2> <strong>I would like to hear from you...</strong></h2>
         <section className="aboutMe">
             <form action="mailto:boutetlb@gmail.com" method="post">
                 <div className="form-group">

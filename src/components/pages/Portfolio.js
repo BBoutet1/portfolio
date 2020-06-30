@@ -1,9 +1,9 @@
 import React from "react";
 
 const Portfolio = () => (
-        <main className="container bg-white portfolio">
-            <h2> <strong>Portfolio</strong></h2>
-            <section className="portfolioWrap">
+        <main className="container bg-white">
+            <h2> <strong>Make a tour in through my work...</strong></h2>
+            <section className="">
                 <div className="box">
                     <div className="bg-image"> </div>
                     <div className="text-block ">
