@@ -40,19 +40,13 @@ const About = () => (
                                 Linkdin profile
                             </a>
                     </div>
-                    <div className="float-left w-100">
-                        <i className="glyphicon glyphicon-link "></i>
-                        <a href={"https://bboutet1.github.io/ "}>
-                            bboutet1.github.io/
-                            </a>
-                    </div>
                 </div>
             </picture>
-            <h3><strong>Bakground</strong></h3>
+            <h3><strong>Education and work experience</strong></h3>
             <p> Engineer-In-Training, international-trained (France). Bilingual: French-English. Currently learning full-stack web development at the University of Toronto while developing my developer portfolio.</p>
             <p>Work experience in operations and maintenance of data acquisition equipment (MLWD telemetry measurements).</p>
-            <p>More details in my resume
-                <a className="resume" href={"Assets/resume.pdf"}>here</a>.
+            <p>More details in my resume {' '}
+                <a className="resume" href={"#"}>here</a>.
             </p>
             <h3><strong>In my dream job</strong> </h3>
             <p> I will be using my problem solving skills to bring solution to real world numeric problems and learn continuously. I am fascinated by algorithms, codes and calculations behind the user interface of a software or web applications. </p>
