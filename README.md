@@ -2,7 +2,7 @@
 
 My developer web portfolio using React
 
-This app is my developer web site application build with `React`. The application's UI is broken down into `components` with a component `state` to respond to user events, searching or sorting employees by name, role or department.
+This app is my developer web site application build with `React`. 
 
 ## Table of contents
 
