@@ -1,7 +1,5 @@
 # React portfolio
 
-My developer web portfolio using React
-
 This app is my developer web site application build with `React`. 
 
 ## Table of contents
