@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.ae74c49b.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.2d721e18.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.2d721e18.chunk.js.map",
+    "runtime-main.js": "/my-portfolio/static/js/runtime-main.8b00eace.js",
+    "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.8b00eace.js.map",
+    "static/js/2.047ffd46.chunk.js": "/my-portfolio/static/js/2.047ffd46.chunk.js",
+    "static/js/2.047ffd46.chunk.js.map": "/my-portfolio/static/js/2.047ffd46.chunk.js.map",
+    "index.html": "/my-portfolio/index.html",
+    "precache-manifest.7b41f31942858c6a5bc503927a6605fa.js": "/my-portfolio/precache-manifest.7b41f31942858c6a5bc503927a6605fa.js",
+    "service-worker.js": "/my-portfolio/service-worker.js",
+    "static/css/main.ae74c49b.chunk.css.map": "/my-portfolio/static/css/main.ae74c49b.chunk.css.map",
+    "static/js/2.047ffd46.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.047ffd46.chunk.js.LICENSE.txt",
+    "static/media/Brice_Boutet.jpg": "/my-portfolio/static/media/Brice_Boutet.d76329e8.jpg",
+    "static/media/style.css": "/my-portfolio/static/media/codingdesk.d50bc6c8.jpg",
+    "static/media/daily-carpool.gif": "/my-portfolio/static/media/daily-carpool.2da7b3c7.gif",
+    "static/media/developer-profil.gif": "/my-portfolio/static/media/developer-profil.e9badfb2.gif",
+    "static/media/employee-directory.gif": "/my-portfolio/static/media/employee-directory.3466cf71.gif",
+    "static/media/resume.pdf": "/my-portfolio/static/media/resume.7f84de31.pdf",
+    "static/media/team-generator.gif": "/my-portfolio/static/media/team-generator.1738edbb.gif",
+    "static/media/weather-dashboard.gif": "/my-portfolio/static/media/weather-dashboard.36964bab.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8b00eace.js",
+    "static/js/2.047ffd46.chunk.js",
+    "static/css/main.ae74c49b.chunk.css",
+    "static/js/main.2d721e18.chunk.js"
+  ]
+}
