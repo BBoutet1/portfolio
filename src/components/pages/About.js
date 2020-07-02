@@ -1,12 +1,13 @@
 import React from "react";
 import "../css/style.css";
 import Photo from "../images/Brice_Boutet.jpg"
+import Resume from "../resume/resume.pdf"
 const About = () => (
   <div>
      <section>
         <h2> <strong>My backgound...</strong></h2>
     </section>
-   <section className="aboutMe">
+    <section className="aboutMe">
             <picture>
                 <img className="profile_image" src={Photo} alt="Brice Boutet"></img>
                 <div className="card ">
