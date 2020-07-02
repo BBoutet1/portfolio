@@ -2,6 +2,7 @@ import React from "react";
 import "../css/style.css";
 import Photo from "../images/Brice_Boutet.jpg"
 import Resume from "../resume/resume.pdf"
+
 const About = () => (
   <div>
      <section>
@@ -47,7 +48,7 @@ const About = () => (
             <p> Engineer-In-Training, international-trained (France). Bilingual: French-English. Currently learning full-stack web development at the University of Toronto while developing my developer portfolio.</p>
             <p>Work experience in operations and maintenance of data acquisition equipment (MLWD telemetry measurements).</p>
             <p>More details in my resume {' '}
-                <a className="resume" href={"#"}>here</a>.
+                <a className="resume" href={Resume}>here</a>.
             </p>
             <h3><strong>In my dream job</strong> </h3>
             <p> I will be using my problem solving skills to bring solution to real world numeric problems and learn continuously. I am fascinated by algorithms, codes and calculations behind the user interface of a software or web applications. </p>
