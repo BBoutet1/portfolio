@@ -4,6 +4,7 @@ import TeamGenerator from "../images/team-generator.gif";
 import DeveloperProfil from "../images/developer-profil.gif";
 import WeatherDashboard from "../images/weather-dashboard.gif";
 import DailyCarpool from "../images/daily-carpool.gif";
+import EatBurger from "../images/eat-da-burger.gif";
 
 const Portfolio = () => (
         <main>
@@ -111,6 +112,25 @@ const Portfolio = () => (
                 </div> 
             </div>
             
+             <div className="card d-inline-block m-2">
+                <div className="card-header d-flex p-2">
+                    <p><strong>Eat-Da-Burger</strong></p>
+                </div>
+                <div className="summary card-body d-flex p-1">
+                    <p>Under construction and using google maps API, this project aims to match workers that have their daily commute (work) route and time close to share a daily ride.</p>
+                </div>
+                <ul className="card-footer pt-1 pb-1 mb-1">
+                    <li>
+                        <a href={"https://eat-that-good-burger.herokuapp.com/"}>Deployed application</a>
+                    </li>
+                    <li>
+                        <a href={"https://github.com/BBoutet1/eat-da-burger"}>Github repository</a>
+                    </li>
+                </ul>
+                <div className="card-body card-footer p-1 pt-2 pb-2">
+                    <img className="w-100" src={EatBurger} alt=""/>
+                </div> 
+            </div>
             
       </section>
         </main>
