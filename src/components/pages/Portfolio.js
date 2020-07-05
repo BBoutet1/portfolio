@@ -27,7 +27,9 @@ const Portfolio = () => (
                     </li>
                 </ul>
                 <div className="card-body card-footer p-1 pt-2 pb-2">
-                    <img className="w-100" src={EmployeeDirectory} alt=""/>
+                    <a className="w-100" href={EmployeeDirectory}>
+                        <img className="w-100" src={EmployeeDirectory} alt=""/>
+                    </a>
                 </div> 
 
             </div>
@@ -47,8 +49,10 @@ const Portfolio = () => (
                         <a href={"https://github.com/BBoutet1/employee-template-engine"}>Github repository</a>
                     </li>
                 </ul>
-                 <div className="card-body card-footer p-1 pt-2 pb-2">
-                    <img className="w-100" src={TeamGenerator} alt=""/>
+                <div className="card-body card-footer p-1 pt-2 pb-2">
+                     <a className="w-100" href={TeamGenerator}>
+                        <img className="w-100" src={TeamGenerator} alt=""/>
+                    </a>
                 </div> 
             </div>
 
@@ -67,8 +71,10 @@ const Portfolio = () => (
                         <a href={"https://github.com/BBoutet1/developer_profile_generator"}>Github repository</a>
                     </li>
                 </ul>
-                  <div className="card-body card-footer p-1 pt-2 pb-2">
-                    <img className="w-100" src={DeveloperProfil} alt=""/>
+                <div className="card-body card-footer p-1 pt-2 pb-2">
+                      <a className="w-100" href={DeveloperProfil}>
+                        <img className="w-100" src={DeveloperProfil} alt=""/>
+                    </a>
                 </div>
             </div>
 
@@ -88,7 +94,9 @@ const Portfolio = () => (
                     </li>
                 </ul>
                 <div className="card-body card-footer p-1 pt-2 pb-2">
-                    <img className="w-100" src={WeatherDashboard} alt=""/>
+                      <a className="w-100" href={WeatherDashboard}>
+                        <img className="w-100" src={WeatherDashboard} alt=""/>
+                    </a>
                 </div> 
             </div>
 
@@ -108,7 +116,9 @@ const Portfolio = () => (
                     </li>
                 </ul>
                 <div className="card-body card-footer p-1 pt-2 pb-2">
-                    <img className="w-100" src={DailyCarpool} alt=""/>
+                     <a className="w-100" href={DailyCarpool}>
+                        <img className="w-100" src={DailyCarpool} alt=""/>
+                    </a>
                 </div> 
             </div>
             
@@ -128,7 +138,9 @@ const Portfolio = () => (
                     </li>
                 </ul>
                 <div className="card-body card-footer p-1 pt-2 pb-2">
-                    <img className="w-100" src={EatBurger} alt=""/>
+                     <a className="w-100" href={EatBurger}>
+                        <img className="w-100" src={EatBurger} alt=""/>
+                    </a>
                 </div> 
             </div>
             
