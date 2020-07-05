@@ -4,7 +4,6 @@ This app is my developer web site application build with `React`.
 
 ## Table of contents
 
-
 * [Deployed application](#deployed-application)
 * [Licence](#licence)
 * [Personal information](#personal-information)
@@ -12,7 +11,9 @@ This app is my developer web site application build with `React`.
 
 ## Deployed application
 
-    Click the link below to see the deployed application.
+The application is deployed in Heroku platform.
+
+Click [here](https://bboutet1.github.io/my-portfolio/) to open the deployed application.
 
 ## License
 

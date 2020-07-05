@@ -11,8 +11,8 @@ const Portfolio = () => (
             <section className="hTwo">
                 <h2> <strong>Make a tour through my web developer work...</strong></h2>
             </section>
-            <section className="portfolio">
-                <div className="card d-inline-block m-2">
+            <section className="portfolio row  justify-content-center">
+                <div className="card d-inline-block ml-auto mr-auto">
                     <div className="card-header d-flex p-2">
                         <p><strong>Employee directory</strong></p>
                     </div>
@@ -34,7 +34,7 @@ const Portfolio = () => (
                     </div> 
                 </div>
        
-                <div className="card d-inline-block m-2">
+                <div className="card d-inline-block ml-auto mr-auto">
                     <div className="card-header d-flex p-2">
                         <p><strong>Employee template engine</strong></p>
                     </div>
@@ -56,12 +56,12 @@ const Portfolio = () => (
                     </div> 
                 </div>
 
-                <div className="card d-inline-block m-2">
+                <div className="card d-inline-block ml-auto mr-auto">
                     <div className="card-header d-flex p-2">
                         <p><strong>Developer profil generator</strong></p>
                     </div>
                     <div className="summary card-body d-flex p-1">
-                        <p>A Node CLI team generator that takes in information about employees and generates an HTML webpage.</p>
+                        <p>A command-line application that dynamically generates a README.md file from user's inputs. It also creates a pdf file containing the user's github profile information.</p>
                     </div> 
                     <ul className="card-footer pt-1 pb-1 mb-1">
                         <li>
@@ -78,7 +78,7 @@ const Portfolio = () => (
                     </div>
                 </div>
 
-                <div className="card d-inline-block m-2">
+                <div className="card d-inline-block ml-auto mr-auto">
                     <div className="card-header d-flex p-2">
                         <p><strong>Weather dashboard</strong></p>
                     </div>
@@ -100,7 +100,7 @@ const Portfolio = () => (
                     </div> 
                 </div>
 
-                <div className="card d-inline-block m-2">
+                <div className="card d-inline-block ml-auto mr-auto">
                     <div className="card-header d-flex p-2">
                         <p><strong>Daily commute carpool</strong></p>
                     </div>
@@ -122,7 +122,7 @@ const Portfolio = () => (
                     </div> 
                 </div>
             
-                <div className="card d-inline-block m-2">
+                <div className="card d-inline-block ml-auto mr-auto">
                     <div className="card-header d-flex p-2">
                         <p><strong>Eat-Da-Burger</strong></p>
                     </div>
