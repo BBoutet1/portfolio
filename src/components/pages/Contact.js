@@ -1,9 +1,10 @@
 import React from "react";
 import "../css/style.css";
 const Contact = () => (
-  <main className="container bg-white">
-
-        <h2> <strong>I would like to hear from you...</strong></h2>
+    <main className="container">
+        <section className="hTwo">
+            <h2> <strong>I would like to hear from you...</strong></h2>
+        </section>
         <section className="aboutMe">
             <form action="mailto:boutetlb@gmail.com" method="post">
                 <div className="form-group">

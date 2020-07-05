@@ -4,8 +4,8 @@ import Photo from "../images/Brice_Boutet.jpg"
 import Resume from "../resume/resume.pdf"
 
 const About = () => (
-  <div>
-     <section>
+  <main className="container">
+     <section className="hTwo">
         <h2> <strong>My backgound...</strong></h2>
     </section>
     <section className="aboutMe">
@@ -53,7 +53,7 @@ const About = () => (
             <h3><strong>In my dream job</strong> </h3>
             <p> I will be using my problem solving skills to bring solution to real world numeric problems and learn continuously. I am fascinated by algorithms, codes and calculations behind the user interface of a software or web applications. </p>
         </section>
-  </div>
+  </main>
 );
 
 export default About;
