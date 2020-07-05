@@ -63,6 +63,7 @@ h2 {
 
 .my-name {
     background-color: darkgrey;
+    height: 60px;
 }
 
 .myName {
@@ -95,7 +96,7 @@ a {
     top: 0px;
     bottom: 0px;
     background: rgba(255, 0, 0, 0.5);
-    padding-top: 13%;
+    padding-top: 7%;
 }
 
 

@@ -127,7 +127,7 @@ const Portfolio = () => (
                         <p><strong>Eat-Da-Burger</strong></p>
                     </div>
                     <div className="summary card-body d-flex p-1">
-                        <p>Under construction and using google maps API, this project aims to match workers that have their daily commute (work) route and time close to share a daily ride.</p>
+                        <p>This web application is a burger logger built with MySQL, Node, Express, Handlebars and a homemade ORM (yum!).</p>
                     </div>
                     <ul className="card-footer pt-1 pb-1 mb-1">
                         <li>

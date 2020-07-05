@@ -6,7 +6,7 @@ import Resume from "../resume/resume.pdf"
 const About = () => (
   <main className="container">
      <section className="hTwo">
-        <h2> <strong>My backgound...</strong></h2>
+        <h2> <strong>My background...</strong></h2>
     </section>
     <section className="aboutMe">
             <picture>
@@ -15,7 +15,7 @@ const About = () => (
                     <div className="float-left w-100">
                         <i className="fa fa-map-marker "></i>
                         <p>
-                            Brampton,Ontario
+                            Brampton, Ontario
                         </p>
                     </div>
                     <div className="float-left w-100">
