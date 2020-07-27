@@ -1,31 +1,31 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.2a447637.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.179b3529.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.179b3529.chunk.js.map",
+    "main.css": "/my-portfolio/static/css/main.69d078e9.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.24e53411.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.24e53411.chunk.js.map",
     "runtime-main.js": "/my-portfolio/static/js/runtime-main.8b00eace.js",
     "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.8b00eace.js.map",
     "static/js/2.304b8947.chunk.js": "/my-portfolio/static/js/2.304b8947.chunk.js",
     "static/js/2.304b8947.chunk.js.map": "/my-portfolio/static/js/2.304b8947.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
-    "precache-manifest.b18e0d3daf4f7afa09e8b2fa54130a57.js": "/my-portfolio/precache-manifest.b18e0d3daf4f7afa09e8b2fa54130a57.js",
+    "precache-manifest.83834a49aa9f8372ebc1b4fc369ee5a4.js": "/my-portfolio/precache-manifest.83834a49aa9f8372ebc1b4fc369ee5a4.js",
     "service-worker.js": "/my-portfolio/service-worker.js",
-    "static/css/main.2a447637.chunk.css.map": "/my-portfolio/static/css/main.2a447637.chunk.css.map",
+    "static/css/main.69d078e9.chunk.css.map": "/my-portfolio/static/css/main.69d078e9.chunk.css.map",
     "static/js/2.304b8947.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.304b8947.chunk.js.LICENSE.txt",
     "static/media/Brice_Boutet.jpg": "/my-portfolio/static/media/Brice_Boutet.d76329e8.jpg",
     "static/media/style.css": "/my-portfolio/static/media/codingdesk.d50bc6c8.jpg",
-    "static/media/daily-carpool.gif": "/my-portfolio/static/media/daily-carpool.2cf58d62.gif",
+    "static/media/daily-carpool.gif": "/my-portfolio/static/media/daily-carpool.3e2b9421.gif",
     "static/media/developer-profil.gif": "/my-portfolio/static/media/developer-profil.e9badfb2.gif",
     "static/media/eat-da-burger.gif": "/my-portfolio/static/media/eat-da-burger.00ded0e3.gif",
     "static/media/employee-directory.gif": "/my-portfolio/static/media/employee-directory.3466cf71.gif",
-    "static/media/resume.pdf": "/my-portfolio/static/media/resume.7f84de31.pdf",
+    "static/media/resume.pdf": "/my-portfolio/static/media/resume.c9540054.pdf",
     "static/media/team-generator.gif": "/my-portfolio/static/media/team-generator.ab8cdc18.gif",
     "static/media/weather-dashboard.gif": "/my-portfolio/static/media/weather-dashboard.c138f388.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.8b00eace.js",
     "static/js/2.304b8947.chunk.js",
-    "static/css/main.2a447637.chunk.css",
-    "static/js/main.179b3529.chunk.js"
+    "static/css/main.69d078e9.chunk.css",
+    "static/js/main.24e53411.chunk.js"
   ]
 }
