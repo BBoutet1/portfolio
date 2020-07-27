@@ -43,7 +43,7 @@ const Portfolio = () => (
                     </div>
                     <ul className="card-footer pt-1 pb-1 mb-1">
                         <li>
-                            <p> CLI Installation: <strong>node app.js </strong> inside /Develop </p>
+                            <p> Start CL: <strong>node app.js </strong> inside /Develop </p>
                         </li>
                         <li>
                             <a href={"https://github.com/BBoutet1/employee-template-engine"}>Github repository</a>
@@ -65,7 +65,7 @@ const Portfolio = () => (
                     </div> 
                     <ul className="card-footer pt-1 pb-1 mb-1">
                         <li>
-                            <p> CLI Installation: <strong> node index.js.</strong> Follow README</p>
+                            <p> Start CL: <strong> node index.js.</strong> Follow README</p>
                         </li>
                         <li>
                             <a href={"https://github.com/BBoutet1/developer_profile_generator"}>Github repository</a>
