@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2c7dd340.chunk.css",
-    "main.js": "/portfolio/static/js/main.4f6cf9e7.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.4f6cf9e7.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.224f763b.chunk.css",
+    "main.js": "/portfolio/static/js/main.6597e284.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.6597e284.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
     "static/js/2.fdb61cd0.chunk.js": "/portfolio/static/js/2.fdb61cd0.chunk.js",
     "static/js/2.fdb61cd0.chunk.js.map": "/portfolio/static/js/2.fdb61cd0.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.23df2a07a3a1ece70f3133c7b395f17a.js": "/portfolio/precache-manifest.23df2a07a3a1ece70f3133c7b395f17a.js",
+    "precache-manifest.71131a5385986d5c39bfd406d2d6eac1.js": "/portfolio/precache-manifest.71131a5385986d5c39bfd406d2d6eac1.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.2c7dd340.chunk.css.map": "/portfolio/static/css/main.2c7dd340.chunk.css.map",
+    "static/css/main.224f763b.chunk.css.map": "/portfolio/static/css/main.224f763b.chunk.css.map",
     "static/js/2.fdb61cd0.chunk.js.LICENSE.txt": "/portfolio/static/js/2.fdb61cd0.chunk.js.LICENSE.txt",
     "static/media/Brice_Boutet.jpg": "/portfolio/static/media/Brice_Boutet.d76329e8.jpg",
     "static/media/style.css": "/portfolio/static/media/codingdesk.d50bc6c8.jpg",
@@ -18,14 +18,14 @@
     "static/media/developer-profil.gif": "/portfolio/static/media/developer-profil.e9badfb2.gif",
     "static/media/eat-da-burger.gif": "/portfolio/static/media/eat-da-burger.00ded0e3.gif",
     "static/media/employee-directory.gif": "/portfolio/static/media/employee-directory.3466cf71.gif",
-    "static/media/resume.pdf": "/portfolio/static/media/resume.c9540054.pdf",
+    "static/media/resume.pdf": "/portfolio/static/media/resume.b67a023a.pdf",
     "static/media/team-generator.gif": "/portfolio/static/media/team-generator.ab8cdc18.gif",
     "static/media/weather-dashboard.gif": "/portfolio/static/media/weather-dashboard.c138f388.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
     "static/js/2.fdb61cd0.chunk.js",
-    "static/css/main.2c7dd340.chunk.css",
-    "static/js/main.4f6cf9e7.chunk.js"
+    "static/css/main.224f763b.chunk.css",
+    "static/js/main.6597e284.chunk.js"
   ]
 }
