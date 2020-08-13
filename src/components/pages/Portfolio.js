@@ -20,7 +20,7 @@ const Portfolio = () => (
                         <p><strong>Link-N-Park</strong></p>
                     </div>
                     <div className="summary card-body d-flex p-1">
-                    <p>A full-stack react application that allows users to locate bixi bike stations near a specific position and map a cycling route in Toronto</p>
+                    <p>A full-stack react application that allows users to locate bixi bike stations near a specific position and map a cycling route in Toronto.</p>
                     </div>
                     <ul className="card-footer pt-1 pb-1 mb-1">
                         <li>
