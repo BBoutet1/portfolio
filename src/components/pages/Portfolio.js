@@ -5,13 +5,40 @@ import DeveloperProfil from "../images/developer-profil.gif";
 import WeatherDashboard from "../images/weather-dashboard.gif";
 import DailyCarpool from "../images/daily-carpool.gif";
 import EatBurger from "../images/eat-da-burger.gif";
+import linkPark from "../images/link-park.gif";
 
 const Portfolio = () => (
     <main className="container">
             <section className="hTwo">
                 <h2> <strong>Make a tour through my web developer work...</strong></h2>
             </section>
-            <section className="portfolio row  justify-content-center">
+        <section className="portfolio row  justify-content-center">
+
+            {/* Project */}
+                <div className="card d-inline-block ml-auto mr-auto">
+                    <div className="card-header d-flex p-2">
+                        <p><strong>Link-N-Park</strong></p>
+                    </div>
+                    <div className="summary card-body d-flex p-1">
+                    <p>A full-stack react application that allows users to locate bixi bike stations near a specific position and map a cycling route in Toronto</p>
+                    </div>
+                    <ul className="card-footer pt-1 pb-1 mb-1">
+                        <li>
+                            <a href={"https://link-n-park.herokuapp.com/"}>Deployed application</a>
+                        </li>
+                        <li>
+                            <a href={"https://github.com/joel-clifford-bootcamp/project3"}>Github repository</a>
+                        </li>
+                    </ul>
+                    <div className="card-body card-footer p-1 pt-2 pb-2">
+                        <a className="w-100" href={linkPark}>
+                            <img className="w-100" src={linkPark} alt=""/>
+                        </a>
+                    </div> 
+            </div>
+            
+            
+            {/* Project */}
                 <div className="card d-inline-block ml-auto mr-auto">
                     <div className="card-header d-flex p-2">
                         <p><strong>Employee directory</strong></p>
@@ -32,8 +59,9 @@ const Portfolio = () => (
                             <img className="w-100" src={EmployeeDirectory} alt=""/>
                         </a>
                     </div> 
-                </div>
-       
+            </div>
+            
+            {/* Project */}
                 <div className="card d-inline-block ml-auto mr-auto">
                     <div className="card-header d-flex p-2">
                         <p><strong>Employee template engine</strong></p>
@@ -55,8 +83,8 @@ const Portfolio = () => (
                         </a>
                     </div> 
                 </div>
-
-                <div className="card d-inline-block ml-auto mr-auto">
+            {/* Project */}
+                {/* <div className="card d-inline-block ml-auto mr-auto">
                     <div className="card-header d-flex p-2">
                         <p><strong>Developer profil generator</strong></p>
                     </div>
@@ -76,8 +104,8 @@ const Portfolio = () => (
                             <img className="w-100" src={DeveloperProfil} alt=""/>
                         </a>
                     </div>
-                </div>
-
+                </div> */}
+         {/* Project */}
                 <div className="card d-inline-block ml-auto mr-auto">
                     <div className="card-header d-flex p-2">
                         <p><strong>Weather dashboard</strong></p>
@@ -98,8 +126,9 @@ const Portfolio = () => (
                             <img className="w-100" src={WeatherDashboard} alt=""/>
                         </a>
                     </div> 
-                </div>
-
+            </div>
+            
+            {/* Project */}
                 <div className="card d-inline-block ml-auto mr-auto">
                     <div className="card-header d-flex p-2">
                         <p><strong>Daily commute carpool</strong></p>
@@ -122,6 +151,7 @@ const Portfolio = () => (
                     </div> 
                 </div>
             
+             {/* Project */}
                 <div className="card d-inline-block ml-auto mr-auto">
                     <div className="card-header d-flex p-2">
                         <p><strong>Eat-Da-Burger</strong></p>
