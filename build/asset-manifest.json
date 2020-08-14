@@ -1,23 +1,25 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.5c71fd78.chunk.css",
-    "main.js": "/portfolio/static/js/main.e57079eb.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.e57079eb.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.c868f752.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.c868f752.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
     "static/js/2.fdb61cd0.chunk.js": "/portfolio/static/js/2.fdb61cd0.chunk.js",
     "static/js/2.fdb61cd0.chunk.js.map": "/portfolio/static/js/2.fdb61cd0.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.21f03b69b1ad227e04a7883d38f8c1fc.js": "/portfolio/precache-manifest.21f03b69b1ad227e04a7883d38f8c1fc.js",
+    "precache-manifest.054ff88bc3317e7f3ef53daefb190e26.js": "/portfolio/precache-manifest.054ff88bc3317e7f3ef53daefb190e26.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.5c71fd78.chunk.css.map": "/portfolio/static/css/main.5c71fd78.chunk.css.map",
     "static/js/2.fdb61cd0.chunk.js.LICENSE.txt": "/portfolio/static/js/2.fdb61cd0.chunk.js.LICENSE.txt",
     "static/media/Brice_Boutet.jpg": "/portfolio/static/media/Brice_Boutet.d76329e8.jpg",
+    "static/media/code-quiz.gif": "/portfolio/static/media/code-quiz.37163a50.gif",
     "static/media/style.css": "/portfolio/static/media/codingdesk.d50bc6c8.jpg",
     "static/media/daily-carpool.gif": "/portfolio/static/media/daily-carpool.d9750a7b.gif",
     "static/media/developer-profil.gif": "/portfolio/static/media/developer-profil.09ab8dc4.gif",
     "static/media/eat-da-burger.gif": "/portfolio/static/media/eat-da-burger.00ded0e3.gif",
     "static/media/employee-directory.gif": "/portfolio/static/media/employee-directory.3466cf71.gif",
+    "static/media/google-books.gif": "/portfolio/static/media/google-books.c1927f40.gif",
     "static/media/link-park.gif": "/portfolio/static/media/link-park.ff4ad6fd.gif",
     "static/media/resume.pdf": "/portfolio/static/media/resume.d747660d.pdf",
     "static/media/team-generator.gif": "/portfolio/static/media/team-generator.5160d615.gif",
@@ -27,6 +29,6 @@
     "static/js/runtime-main.209c2d7e.js",
     "static/js/2.fdb61cd0.chunk.js",
     "static/css/main.5c71fd78.chunk.css",
-    "static/js/main.e57079eb.chunk.js"
+    "static/js/main.c868f752.chunk.js"
   ]
 }
