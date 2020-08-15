@@ -22,7 +22,7 @@ const Portfolio = () => (
                         <p><strong>Link-N-Park</strong></p>
                     </div>
                     <div className="summary card-body d-flex p-1">
-                    <p>A SERN stack application that allows users to locate bixi bike stations near a specific position and map a cycling route in Toronto.</p>
+                    <p>A full stack React application that allows users to locate bixi bike stations near a specific position and map a cycling route in Toronto.</p>
                     </div>
                     <ul className="card-footer pt-1 pb-1 mb-1">
                         <li>
@@ -32,10 +32,8 @@ const Portfolio = () => (
                             <a href={"https://github.com/joel-clifford-bootcamp/project3"}>Github repository</a>
                         </li>
                     </ul>
-                    <div className="card-body card-footer p-1 pt-2 pb-2">
-                        <a className="w-100" href={linkPark}>
-                            <img className="w-100" src={linkPark} alt=""/>
-                        </a>
+                     <div className="card-body card-footer p-1 pt-2 pb-2">
+                        <img className="w-100" src={linkPark} alt=""/>
                     </div> 
             </div>
 
@@ -56,9 +54,7 @@ const Portfolio = () => (
                         </li>
                     </ul>
                     <div className="card-body card-footer p-1 pt-2 pb-2">
-                        <a className="w-100" href={googleBooks}>
-                            <img className="w-100" src={googleBooks} alt=""/>
-                        </a>
+                        <img className="w-100" src={googleBooks} alt=""/>
                     </div> 
             </div>
             
@@ -80,9 +76,7 @@ const Portfolio = () => (
                         </li>
                     </ul>
                     <div className="card-body card-footer p-1 pt-2 pb-2">
-                        <a className="w-100" href={EmployeeDirectory}>
-                            <img className="w-100" src={EmployeeDirectory} alt=""/>
-                        </a>
+                        <img className="w-100" src={EmployeeDirectory} alt=""/>
                     </div> 
                 </div>
             
@@ -103,9 +97,7 @@ const Portfolio = () => (
                         </li>
                     </ul>
                     <div className="card-body card-footer p-1 pt-2 pb-2">
-                        <a className="w-100" href={TeamGenerator}>
-                            <img className="w-100" src={TeamGenerator} alt=""/>
-                        </a>
+                        <img className="w-100" src={TeamGenerator} alt=""/>
                     </div> 
                 </div> */}
             {/* Project */}
@@ -125,9 +117,7 @@ const Portfolio = () => (
                         </li>
                     </ul>
                     <div className="card-body card-footer p-1 pt-2 pb-2">
-                        <a className="w-100" href={DeveloperProfil}>
-                            <img className="w-100" src={DeveloperProfil} alt=""/>
-                        </a>
+                        <img className="w-100" src={DeveloperProfil} alt=""/>
                     </div>
                 </div>
          {/* Project */}
@@ -147,12 +137,10 @@ const Portfolio = () => (
                         </li>
                     </ul>
                     <div className="card-body card-footer p-1 pt-2 pb-2">
-                        <a className="w-100" href={WeatherDashboard}>
-                            <img className="w-100" src={WeatherDashboard} alt=""/>
-                        </a>
+                        <img className="w-100" src={WeatherDashboard} alt=""/>
                     </div> 
             </div> */}
-            
+
             {/* Project */}
                 <div className="card d-inline-block ml-auto mr-auto">
                     <div className="card-header d-flex p-2">
@@ -169,10 +157,8 @@ const Portfolio = () => (
                             <a href={"https://github.com/BBoutet1/project2_daily-carpool"}>Github repository</a>
                         </li>
                     </ul>
-                    <div className="card-body card-footer p-1 pt-2 pb-2">
-                        <a className="w-100" href={DailyCarpool}>
-                            <img className="w-100" src={DailyCarpool} alt=""/>
-                        </a>
+                     <div className="card-body card-footer p-1 pt-2 pb-2">
+                         <img className="w-100" src={DailyCarpool} alt=""/>
                     </div> 
                 </div>
             
@@ -193,9 +179,7 @@ const Portfolio = () => (
                         </li>
                     </ul>
                     <div className="card-body card-footer p-1 pt-2 pb-2">
-                        <a className="w-100" href={EatBurger}>
-                            <img className="w-100" src={EatBurger} alt=""/>
-                        </a>
+                        <img className="w-100" src={EatBurger} alt=""/>
                     </div> 
                 </div> */}
             
@@ -216,9 +200,7 @@ const Portfolio = () => (
                         </li>
                     </ul>
                     <div className="card-body card-footer p-1 pt-2 pb-2">
-                        <a className="w-100" href={CodeQuiz}>
-                            <img className="w-100" src={CodeQuiz} alt=""/>
-                        </a>
+                         <img className=" w-100" src={CodeQuiz} alt=""/>
                     </div> 
                 </div>
             

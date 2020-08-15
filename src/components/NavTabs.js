@@ -4,7 +4,7 @@ function NavTabs(props) {
   return (
    
    
-      <ul className="nav nav-tabs  bg-secondary w-100">
+      <ul className="nav nav-tabs  bg-dark w-100">
          <h2 className="my-name mr-auto"> Brice Boutet</h2>
           <li className="nav-item">
         <a
