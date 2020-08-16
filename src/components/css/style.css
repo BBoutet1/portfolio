@@ -130,16 +130,12 @@
             }
             /*Link selector attributes*/
             
-            a:hover {
-                color: grey;
+            a {
+                color: white;
             }
             
             a:hover {
-                color: blue;
-            }
-            
-            a:visited {
-                color: rgba(255, 0, 0);
+                color: cyan;
             }
             
             picture {
@@ -197,6 +193,7 @@
             .summary p {
                 height: auto;
                 margin: auto;
+                text-align: justify;
             }
             
             .card .card-body {
