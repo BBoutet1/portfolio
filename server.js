@@ -1,11 +1,25 @@
-var express = require('express');
-var router = express.Router();
-var nodemailer = require('nodemailer');
-var cors = require('cors');
+const express = require('express');
+const router = express.Router();
+const nodemailer = require('nodemailer');
+const cors = require('cors');
 const creds = require('./config/config');
+//-----------------------------
 
-var transport = {
-    host: 'smtp.example.com', // Don’t forget to replace with the SMTP host of your provider
+
+const app = express()
+app.use(cors())
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
+
+app.use('/', router);
+
+app.post("/api/sendEmail", (req, res) => {
+
+})
+
+//----------------------------------------
+const transport = {
+    host: 'smtp.gmail.com', // Don’t forget to replace with the SMTP host of your provider
     port: 587,
     auth: {
         user: creds.USER,
@@ -13,7 +27,7 @@ var transport = {
     }
 }
 
-var transporter = nodemailer.createTransport(transport)
+const transporter = nodemailer.createTransport(transport)
 
 transporter.verify((error, success) => {
     if (error) {
@@ -23,13 +37,14 @@ transporter.verify((error, success) => {
     }
 });
 
-router.post('/send', (req, res, next) => {
-    var name = req.body.name
-    var email = req.body.email
-    var message = req.body.message
-    var content = `name: ${name} \n email: ${email} \n message: ${message} `
+router.post('/api/send', (req, res) => {
+    console.log(req.body)
+    const name = req.body.name
+    const email = req.body.email
+    const message = req.body.message
+    const content = `name: ${name} \n email: ${email} \n message: ${message} `
 
-    var mail = {
+    const mail = {
         from: name,
         to: 'boutetlb@gmail.com', // Change to email address that you want to receive messages on
         subject: 'New Message from Contact Form',
@@ -49,8 +64,5 @@ router.post('/send', (req, res, next) => {
     })
 })
 
-const app = express()
-app.use(cors())
-app.use(express.json())
-app.use('/', router)
-app.listen(3002)
+
+app.listen(3002, () => { console.log("App running at port 3002") })

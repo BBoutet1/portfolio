@@ -1,42 +1,37 @@
 {
-    "homepage": "https://bboutet1.github.io/portfolio/",
-    "name": "portfolio",
-    "version": "0.1.0",
-    "private": true,
+    "name": "my-portfolio",
+    "version": "1.0.0",
+    "description": "My developer portfolio using ReactJS",
+    "main": "server.js",
+    "scripts": {
+        "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+        "start:prod": "node server.js",
+        "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+        "client": "cd client && npm run start",
+        "seed": "node scripts/seedDB.js",
+        "install": "cd client && npm install",
+        "build": "cd client && npm run build",
+        "heroku-postbuild": "npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/BBoutet1/my-portfolio.git"
+    },
+    "author": "Brice L. Boutet",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/BBoutet1/my-portfolio/issues"
+    },
+    "homepage": "https://github.com/BBoutet1/my-portfolio#readme",
+    "devDependencies": {
+        "concurrently": "^5.3.0",
+        "nodemon": "^2.0.4"
+    },
     "dependencies": {
-        "@testing-library/jest-dom": "^4.2.4",
-        "@testing-library/react": "^9.5.0",
-        "@testing-library/user-event": "^7.2.1",
         "axios": "^0.19.2",
         "cors": "^2.8.5",
-        "react": "^16.13.1",
-        "react-dom": "^16.13.1",
-        "react-scripts": "3.4.1"
-    },
-    "scripts": {
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject"
-    },
-    "eslintConfig": {
-        "extends": "react-app"
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    },
-    "devDependencies": {
-        "gh-pages": "^3.1.0"
+        "express": "^4.17.1",
+        "if-env": "^1.0.4",
+        "nodemailer": "^6.4.11"
     }
 }

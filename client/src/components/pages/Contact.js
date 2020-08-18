@@ -16,7 +16,7 @@ class Contact extends React.Component {
     e.preventDefault();
     axios({
       method: "POST", 
-      url:"http://localhost:3002/send", 
+      url:"/send", 
       data:  this.state
     }).then((response)=>{
       if (response.data.status === 'success'){
@@ -41,16 +41,14 @@ render() {
         <section className="aboutMe">
             <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="post">
                 <div className="form-group">
-                    <label>Name:</label>
-                    <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)}/>
+                    <input type="text" className="form-control" value={this.state.name} placeholder="Full Name"  onChange={this.onNameChange.bind(this)} />
                 </div>
                 <div className="form-group">
-                    <label>Email:</label>
-                    <input type="email" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)}/>
+                    <input type="email" className="form-control" placeholder="Email" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)}/>
                 </div>
                 <div className="form-group">
                     <label>Message:</label>
-                    <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)}></textarea>
+                    <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} ></textarea>
                 </div>
                 <div>
                     <input type="submit" className="btn" value="Send"/>
