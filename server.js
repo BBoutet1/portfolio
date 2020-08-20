@@ -1,29 +1,37 @@
 const express = require('express');
-const router = express.Router();
+// const router = express.Router();
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 const creds = require('./config/config');
 //-----------------------------
+const path = require("path");
+const router = require("express").Router();
 
 
 const app = express()
 app.use(cors())
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
+app.use('/', router)
 
-app.use('/', router);
+// app.use('/', router);
 
-app.post("/api/sendEmail", (req, res) => {
+// app.post("/api/send", (req, res) => {
 
-})
+// })
+
+
+router.use(function(req, res) {
+    res.sendFile(path.join(__dirname, "../client/build/index.html"));
+});
 
 //----------------------------------------
 const transport = {
-    host: 'smtp.gmail.com', // Don’t forget to replace with the SMTP host of your provider
-    port: 587,
+    host: "smtp.mailtrap.io",
+    port: 2525,
     auth: {
-        user: creds.USER,
-        pass: creds.PASS
+        user: "0105e36894884d",
+        pass: "1977492f03d4ae"
     }
 }
 
@@ -37,7 +45,8 @@ transporter.verify((error, success) => {
     }
 });
 
-router.post('/api/send', (req, res) => {
+
+router.post('/send', cors(), (req, res) => {
     console.log(req.body)
     const name = req.body.name
     const email = req.body.email
@@ -50,6 +59,8 @@ router.post('/api/send', (req, res) => {
         subject: 'New Message from Contact Form',
         text: content
     }
+
+    console.log(mail)
 
     transporter.sendMail(mail, (err, data) => {
         if (err) {
@@ -65,4 +76,4 @@ router.post('/api/send', (req, res) => {
 })
 
 
-app.listen(3002, () => { console.log("App running at port 3002") })
+app.listen(3001, () => { console.log("App running at port 3001") })

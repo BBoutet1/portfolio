@@ -16,10 +16,11 @@ class Contact extends React.Component {
     e.preventDefault();
     axios({
       method: "POST", 
-      url:"/send", 
+      url:"http://localhost:3000/send", 
       data:  this.state
     }).then((response)=>{
-      if (response.data.status === 'success'){
+      if (response.data.status === 'success') {
+        console.log(response)
         alert("Message Sent."); 
         this.resetForm()
       }else if(response.data.status === 'fail'){
@@ -51,7 +52,7 @@ render() {
                     <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} ></textarea>
                 </div>
                 <div>
-                    <input type="submit" className="btn" value="Send"/>
+                    <button type="submit" className="btn">Submit</button>
                 </div>
             </form>
         </section>
