@@ -15,6 +15,15 @@ const app = express()
 app.use(cors())
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
+
+const PORT = process.env.PORT || 3001;
+
+// Serve up static assets (usually on heroku)
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static("client/build"));
+}
+
+
 app.use('/', router)
 
 const transport = {
@@ -48,13 +57,12 @@ router.post('/send', (req, res) => {
     const email = req.body.email
     const subject = req.body.subject
     const message = req.body.message
-    const content = `name: ${name} \nemail: ${email} \nsubject: ${subject} \nmessage: ${message} `
 
     const mail = {
         from: `Porfolio visitor: ${name} <${email}>`,
         to: 'boutetlb@gmail.com', // Email address that you want to receive messages on
         subject: subject,
-        text: content
+        text: message
     }
 
     console.log(mail)
@@ -72,5 +80,7 @@ router.post('/send', (req, res) => {
     })
 })
 
-
-app.listen(3001, () => { console.log("App running at port 3001") })
+// Start the API server
+app.listen(PORT, () => {
+    console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+});
