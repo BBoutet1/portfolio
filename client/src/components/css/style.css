@@ -214,10 +214,10 @@
         
         form {
             color: rgb(71, 69, 69);
-        }
-        
-        form {
-            color: rgb(71, 69, 69);
+            width: 100%;
+            max-width: 620px;
+            margin-right: auto;
+            margin-left: auto;
         }
         /* Gif zoom on screens that are 620px or more, set the background color to olive */
         

@@ -3,24 +3,35 @@ import axios from "axios";
 import "../css/style.css";
 
 class Contact extends React.Component {
-  constructor(props) {
-	super(props);
-	this.state = {
+	state = {
   	name: '',
-  	email: '',
+    email: '',
+    subject:'',
   	message: ''
 	}
-  }
+  
     
-      handleSubmit(e){
+ 
+  
+  handleChange = event => {
+    event.preventDefault()
+    let value = event.target.value;
+    let name = event.target.name;
+    this.setState({ [name]: value })
+  
+  }
+
+  handleSubmit = e => {
+ 
     e.preventDefault();
+        console.log(this.state)
     axios({
       method: "POST", 
-      url:"http://localhost:3000/send", 
+      url:"/send", 
       data:  this.state
     }).then((response)=>{
       if (response.data.status === 'success') {
-        console.log(response)
+        console.log(response.data)
         alert("Message Sent."); 
         this.resetForm()
       }else if(response.data.status === 'fail'){
@@ -31,46 +42,39 @@ class Contact extends React.Component {
 
   resetForm(){
     
-     this.setState({name: '', email: '', message: ''})
+     this.setState({name: '', email: '', subject:'', message: ''})
   }
 
-render() {
- return(    <main className="container">
-        <section className="hTwo">
-            <h2> <strong>I would like to hear from you...</strong></h2>
-        </section>
-        <section className="aboutMe">
-            <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="post">
-                <div className="form-group">
-                    <input type="text" className="form-control" value={this.state.name} placeholder="Full Name"  onChange={this.onNameChange.bind(this)} />
-                </div>
-                <div className="form-group">
-                    <input type="email" className="form-control" placeholder="Email" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)}/>
-                </div>
-                <div className="form-group">
-                    <label>Message:</label>
-                    <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} ></textarea>
-                </div>
-                <div>
-                    <button type="submit" className="btn">Submit</button>
-                </div>
-            </form>
-        </section>
+  render() {
+    console.log(this.state)
+    return (<main className="container">
+      <section className="hTwo">
+        <h2> <strong>I would like to hear from you...</strong></h2>
+      </section>
+      <section className="aboutMe">
+        <form id="contact-form" onSubmit={this.handleSubmit} method="post">
+          <div className="form-group">
+            <input type="text" name="name" className="form-control" value={this.state.name} placeholder="Full Name" onChange={this.handleChange} />
+          </div>
+          <div className="form-group">
+            <input type="email" name="email" className="form-control" placeholder="Email" aria-describedby="emailHelp" value={this.state.email} onChange={this.handleChange} />
+          </div>
+          <div className="form-group">
+            <input type="text" name="subject" className="form-control" placeholder="Subject" value={this.state.subject} onChange={this.handleChange} />
+          </div>
+          <div className="form-group">
+            <textarea name="message" className="form-control" placeholder="Your message here..." rows="5" value={this.state.message} onChange={this.handleChange} ></textarea>
+          </div>
+          <div>
+            <button type="submit" className="btn">Submit</button>
+          </div>
+        </form>
+      </section>
     </main>
-);
-}
-
-  onNameChange(event) {
-	this.setState({name: event.target.value})
+    );
   }
 
-  onEmailChange(event) {
-	this.setState({email: event.target.value})
-  }
 
-  onMessageChange(event) {
-	this.setState({message: event.target.value})
-  }
 
 }
 

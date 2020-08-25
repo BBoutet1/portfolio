@@ -1,12 +1,15 @@
 const express = require('express');
-// const router = express.Router();
+const router = express.Router();
+require('dotenv').config()
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 const creds = require('./config/config');
-//-----------------------------
-const path = require("path");
-const router = require("express").Router();
 
+const bunyan = require('bunyan');
+let logger = bunyan.createLogger({
+    name: 'nodemailer'
+});
+logger.level('trace');
 
 const app = express()
 app.use(cors())
@@ -14,25 +17,19 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use('/', router)
 
-// app.use('/', router);
-
-// app.post("/api/send", (req, res) => {
-
-// })
-
-
-router.use(function(req, res) {
-    res.sendFile(path.join(__dirname, "../client/build/index.html"));
-});
-
-//----------------------------------------
 const transport = {
-    host: "smtp.mailtrap.io",
-    port: 2525,
+    host: 'smtp.gmail.com',
+    port: 587,
+    secure: false,
     auth: {
-        user: "0105e36894884d",
-        pass: "1977492f03d4ae"
-    }
+        user: process.env.USER, //process.env.user,
+        pass: process.env.PASS //process.env.password
+    },
+    tls: {
+        rejectUnauthorized: false
+    },
+    debug: true, // show debug output
+    logger: true // log information in console
 }
 
 const transporter = nodemailer.createTransport(transport)
@@ -46,17 +43,17 @@ transporter.verify((error, success) => {
 });
 
 
-router.post('/send', cors(), (req, res) => {
-    console.log(req.body)
+router.post('/send', (req, res) => {
     const name = req.body.name
     const email = req.body.email
+    const subject = req.body.subject
     const message = req.body.message
-    const content = `name: ${name} \n email: ${email} \n message: ${message} `
+    const content = `name: ${name} \nemail: ${email} \nsubject: ${subject} \nmessage: ${message} `
 
     const mail = {
-        from: name,
-        to: 'boutetlb@gmail.com', // Change to email address that you want to receive messages on
-        subject: 'New Message from Contact Form',
+        from: `Porfolio visitor: ${name} <${email}>`,
+        to: 'boutetlb@gmail.com', // Email address that you want to receive messages on
+        subject: subject,
         text: content
     }
 

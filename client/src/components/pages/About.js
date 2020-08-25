@@ -45,7 +45,7 @@ const About = () => (
                 </div>
             </picture>
             <h3><strong>Education and work experience</strong></h3>
-            <p> Full Stack Web developer excited and motivated to join a team where I will continue investing in my programming skills after a competitive coding certification program at the University of Toronto. With an international-trained (France) mechanical engineering background, I am bilingual, fluent in English and French and possess a passion for problem solving and continuous learning that singles me out as an asset in software/web development projects.</p>
+            <p> Full Stack Web Developer excited and motivated to join a team where I will continue investing in my programming skills after a competitive coding certification program at the University of Toronto. With an international-trained (France) mechanical engineering background, I am bilingual, fluent in english and french and possess a passion for problem solving and continuous learning that singles me out as an asset in software/web development projects.</p>
             <p>Work experience in operations and maintenance of data acquisition equipment (MLWD telemetry measurements).</p>
             <p>More details in my resume {' '}
                 <a className="resume" href={Resume}>here</a>.
