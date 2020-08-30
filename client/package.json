@@ -1,6 +1,6 @@
 {
     "homepage": "https://bboutet1.github.io/portfolio/",
-    "name": "portfolio",
+    "name": "brice-boutet",
     "version": "0.1.0",
     "private": true,
     "proxy": "http://localhost:3001/",
