@@ -17,13 +17,15 @@ app.use(express.json())
 
 const PORT = process.env.PORT || 3001;
 
+app.use('/', router)
+
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
-    // app.use(express.static("client/build"));
-    app.use(express.static(path.join(__dirname, './client/build')));
+    app.use(express.static("client/build"));
+    // app.use(express.static(path.join(__dirname, './client/build')));
 }
 
-app.use('/', router)
+
 
 const transport = {
     host: 'smtp.gmail.com',
