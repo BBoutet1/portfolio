@@ -4,16 +4,29 @@ This app is my developer web site application build with `React`.
 
 ## Table of contents
 
+* [Technologies](#technologies)
 * [Deployed application](#deployed-application)
 * [Licence](#licence)
 * [Personal information](#personal-information)
 
 
+## Technologies
+
+```
+- Javascript
+- JQuery
+- Node.js
+- Express
+- React
+- CSS
+- HTML5
+- Nodemailer
+```
 ## Deployed application
 
 The application is deployed in Heroku platform.
 
-Click [here](https://bboutet1.github.io/my-portfolio/) to open the deployed application.
+Click [here](https://brice-boutet.herokuapp.com/) to open the deployed application in Heroku.
 
 ## License
 

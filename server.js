@@ -32,8 +32,8 @@ const transport = {
     port: 587,
     secure: false,
     auth: {
-        user: process.env.USER, //process.env.user,
-        pass: process.env.PASS //process.env.password
+        user: process.env.USER,
+        pass: process.env.PASS
     },
     tls: {
         rejectUnauthorized: false

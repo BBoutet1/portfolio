@@ -10,8 +10,6 @@
         "client": "cd client && npm run start",
         "install": "cd client && npm install",
         "build": "cd client && npm run build",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d client/build",
         "heroku-postbuild": "npm run build"
 
     },
@@ -24,7 +22,6 @@
     "bugs": {
         "url": "https://github.com/BBoutet1/my-portfolio/issues"
     },
-    "homepage": "https://bboutet1.github.io/portfolio/",
     "devDependencies": {
         "concurrently": "^5.3.0",
         "nodemon": "^2.0.4"
