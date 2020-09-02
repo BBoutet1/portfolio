@@ -13,14 +13,13 @@ This app is my developer web site application build with `React`.
 ## Technologies
 
 ```
-- Javascript
-- JQuery
+- React
 - Node.js
 - Express
-- React
-- CSS
-- HTML5
 - Nodemailer
+- HTML5
+- Javascript
+- CSS
 ```
 ## Deployed application
 
